@@ -1,0 +1,29 @@
+---
+import { Image } from "astro:assets";
+
+const PROJECTS = [
+  {
+    title: "Project 1",
+    description: "Un portafolio personal para mostrar mis proyectos y habilidades.",
+    link: '#',
+    github: '#',  
+    image: "https://via.placeholder.com/150",
+    tags: ["HTML", "CSS", "JavaScript"]
+  }
+]
+---
+
+{
+    PROJECTS.map(({ image, title, description, tags}) => (
+        <article>   
+            <h3>{title}</h3>
+            <p>{description}</p>
+            <ul>
+                {tags.map(tag => (
+                    <li>{tag}</li>
+                ))}
+            </ul>
+            <img src={image} alt="Captura de pantalla del proyecto ${image}" />
+        </article>
+    ))
+}
