@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portafolio Nicolas Otero Vargas</title>
+  <meta name="description" content="Portafolio profesional" />
+  <link rel="stylesheet" href="src/styles/style.css" />
+</head>
+<body>
+  <!-- ====== NAV ====== -->
+  <header>
+    <div class="wrap nav" role="navigation" aria-label="Principal">
+      <div class="brand"><span class="dot" aria-hidden="true"></span> <a href="#">NicolasOteroV.dev</a></div>
+      <nav class="nav-links">
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ====== HERO / SOBRE MI ====== -->
+  <main class="wrap">
+    <section id="sobre-mi" class="hero" aria-labelledby="title">
+      <div class="hero-card">
+        <!-- Reemplaza src con tu foto -->
+        <img class="avatar" src="src/img/fotoperfil.jpeg" alt="Foto de perfil de Tu Nombre" />
+        <div>
+          <h1 id="title" class="title">Hola, soy <span style="color:var(--accent)">Tu Nombre</span></h1>
+          <p class="subtitle">Desarrollador/a de software — Frontend | Backend | DevOps</p>
+          <p>
+            <!-- Presentación breve (2-3 líneas) -->
+            Soy estudiante de séptimo semestre de Ingeniería de Sistemas en la Universidad Santo Tomás. Me desempeño como programador en etapa de aprendizaje avanzado, con interés en el desarrollo de software y el aprendizaje constante de nuevas tecnologías. Me motiva participar en proyectos que me permitan crecer profesionalmente y aportar soluciones innovadoras.
+          </p>
+          <div class="tags" aria-label="Intereses y roles">
+            <span class="tag">#OpenSource</span>
+            <span class="tag">#UI/UX</span>
+            <span class="tag">#Cloud</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bloque lateral opcional -->
+      <aside aria-label="Resumen rápido">
+        <div class="skill">
+          <h4>Resumen</h4>
+          <p style="margin:0">Programador en etapa de aprendizaje avanzado | Experiencia en Linux, SQL, Python, GitHub, Cloud, Java y .NET | Estudiante de Ingeniería de Sistemas (7.º semestre, Universidad Santo Tomás).</p>
+        </div>
+      </aside>
+    </section>
+
+    <!-- ====== HABILIDADES ====== -->
+    <section id="habilidades" aria-labelledby="skills-title">
+      <h2 class="section-title" id="skills-title">Habilidades</h2>
+      <div class="skills">
+        <div class="skill">
+          <h4>Lenguajes</h4>
+          <div class="chips">
+            <span class="chip">JavaScript</span>
+            <span class="chip">TypeScript</span>
+            <span class="chip">Python</span>
+            <span class="chip">SQL</span>
+          </div>
+        </div>
+        <div class="skill">
+          <h4>Frontend</h4>
+          <div class="chips">
+            <span class="chip">HTML</span>
+            <span class="chip">CSS</span>
+            <span class="chip">React</span>
+            <span class="chip">Vite</span>
+          </div>
+        </div>
+        <div class="skill">
+          <h4>Backend</h4>
+          <div class="chips">
+            <span class="chip">Node.js</span>
+            <span class="chip">Express</span>
+            <span class="chip">Django</span>
+          </div>
+        </div>
+        <div class="skill">
+          <h4>DevOps</h4>
+          <div class="chips">
+            <span class="chip">Git/GitHub</span>
+            <span class="chip">Docker</span>
+            <span class="chip">CI/CD</span>
+            <span class="chip">Linux</span>
+          </div>
+        </div>
+
+        <div class="skill">
+          <h4>Soft Skills</h4>
+          <div class="chips">
+            <span class="chip">Comunicación</span>
+            <span class="chip">Trabajo en equipo</span>
+            <span class="chip">Cumplimiento de directrices</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+
+    <!-- ====== CONTACTO ====== -->
+    <section id="contacto" aria-labelledby="contact-title">
+      <h2 class="section-title" id="contact-title">Contacto</h2>
+      <div class="contact">
+        <!-- Reemplaza los href con tus enlaces reales -->
+        <a href="mailto:nicolasotero20a@gmail.com">
+          <span>📧</span>
+          <div>
+            <strong>Correo</strong>
+            <small>nicolasotero20a@gmail.com</small>
+          </div>
+        </a>
+        <a href="tel:+573183236665">
+          <span>📱</span>
+          <div>
+            <strong>Teléfono</strong>
+            <small>+57 318 323 66 65</small>
+          </div>
+        </a>
+    
+        <a href="https://github.com/NicVar1" target="_blank" rel="noopener">
+          <span>💻</span>
+          <div>
+            <strong>GitHub</strong>
+            <small>/NicVar1</small>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Nicolas · Hecho con mucho cafe y sueño.
+    </footer>
+  </main>
+
+  <script>
+    // Año dinámico en el footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
