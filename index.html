@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolios</title>
+  <style>
+    /* Estilos generales */
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #fff;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Fondo radial oscuro con violeta */
+    .background {
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      height: 100%;
+      width: 100%;
+      background: radial-gradient(125% 125% at 50% 10%, #000 40%, #63e 100%);
+    }
+
+    /* Caja central adaptada al estilo */
+    .container {
+      text-align: center;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 40px 60px;
+      border-radius: 16px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(15px);
+      max-width: 500px;
+      width: 90%;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 30px;
+      font-weight: 600;
+      color: #ddd;
+    }
+
+    /* Botones con estilo futurista */
+    .btn {
+      display: block;
+      margin: 15px auto;
+      padding: 14px 30px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #fff;
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: transform 0.25s ease, box-shadow 0.3s ease, background 0.3s ease;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    }
+
+    .btn:hover {
+      transform: translateY(-4px);
+      background: linear-gradient(135deg, #2575fc, #6a11cb);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+    }
+  </style>
+</head>
+<body>
+  <!-- Fondo -->
+  <div class="background"></div>
+
+  <!-- Contenedor principal -->
+  <div class="container">
+    <h1>Explora los portafolios</h1>
+
+    <a href="https://ornate-faun-599b66.netlify.app/" class="btn" target="_blank">Portafolio Will Higuera</a>
+    <a href="https://charming-flan-d6e496.netlify.app" class="btn" target="_blank">Portafolio Andrés Gómez</a>
+    <a href="https://nicolasotero-portfolio.netlify.app/" class="btn" target="_blank">Portafolio Nicolas Otero</a>
+  </div>
+</body>
+</html>
